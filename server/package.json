@@ -1,7 +1,7 @@
 {
   "name": "@harmonia/server",
   "scripts": {
-    "dev": "nodemon --ignore ./database/fixtures index.js", 
+    "dev": "nodemon --ignore ./database/fixtures server/index.js", 
     "db:migrate": "node ./bin/migrate.js",
     "db:seed": "node ./bin/seed.js",
     "build": "node ./bin/migrate.js",
@@ -26,5 +26,6 @@
   "lint-staged": {
     "*.sql": "prettier --check",
     "*.js": "eslint --report-unused-disable-directives"
-  }
-}
+  }}
+  
+
